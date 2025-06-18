@@ -10,6 +10,3 @@ Hello 👋🏻 , I'm an iOS Developer and Software Engineer. My friends call me 
 
 # GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=AntonioNavarra&theme=gruvbox&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=AntonioNavarra&theme=gruvbox&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
