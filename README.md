@@ -1,5 +1,5 @@
 # About Me:
-Hello 👋🏻 , I'm an iOS Developer and Software Engineer. My friends call me "Pogue" because, despite my humble origins, I never stop dreaming big and believing that determination can open any door.<br><br>
+Hello 👋🏻 , I'm a Software Engineer. My friends call me "Pogue" because, despite my humble origins, I never stop dreaming big and believing that determination can open any door.<br><br>
 
 
 # Socials:
