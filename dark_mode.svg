@@ -1,0 +1,38 @@
+<svg width="495" height="230" viewBox="0 0 495 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; }
+    .title { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #58a6ff; }
+    .label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
+    .value { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #58a6ff; text-anchor: end; }
+    .footer { font: 400 10px 'Segoe UI', Ubuntu, Sans-Serif; fill: #6e7681; }
+  </style>
+
+  <rect x="0.5" y="0.5" width="494" height="229" rx="10" class="card-bg" />
+
+  <text x="25" y="35" class="title">AntonioNavarra's GitHub Stats</text>
+
+  <g transform="translate(25, 60)">
+    <text x="0" y="0" class="label">Total Stars</text>
+    <text x="445" y="0" class="value">0</text>
+
+    <text x="0" y="26" class="label">Total Commits</text>
+    <text x="445" y="26" class="value">199</text>
+
+    <text x="0" y="52" class="label">Total Pull Requests</text>
+    <text x="445" y="52" class="value">0</text>
+
+    <text x="0" y="78" class="label">Total Issues</text>
+    <text x="445" y="78" class="value">0</text>
+
+    <text x="0" y="104" class="label">Total Repositories</text>
+    <text x="445" y="104" class="value">5</text>
+
+    <text x="0" y="130" class="label">Followers</text>
+    <text x="445" y="130" class="value">3</text>
+
+    <text x="0" y="156" class="label">Lines of Code Changed</text>
+    <text x="445" y="156" class="value">+4,871, -1,717</text>
+  </g>
+
+  <text x="25" y="218" class="footer">Last generated: 2026-09-02 15:05 UTC</text>
+</svg>
