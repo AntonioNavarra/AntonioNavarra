@@ -16,4 +16,14 @@ Previously worked on iOS and embedded projects, now focused on quality at scale 
 
 <br>
 
+# GitHub Stats
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AntonioNavarra/AntonioNavarra/main/dark_mode.svg">
+  <img alt="GitHub metrics" src="https://raw.githubusercontent.com/AntonioNavarra/AntonioNavarra/main/light_mode.svg">
+</picture>
+
+Generated automatically every night by a small Python script running in GitHub Actions. Source: [github-metrics](https://github.com/AntonioNavarra/AntonioNavarra/blob/main/today.py).
+
+<br>
+
 Outside of work, I spend most of my weekends surfing. Keeps me sane, and reminds me there is a world beyond a terminal.
