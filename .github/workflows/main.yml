@@ -1,0 +1,42 @@
+name: Update GitHub metrics card
+
+on:
+  schedule:
+    # Runs once a day at 03:27 UTC. GitHub may delay scheduled runs slightly
+    # under load; that is expected and harmless here.
+    - cron: '27 3 * * *'
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # needed so the workflow can commit the regenerated SVGs
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate stats card
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          METRICS_USERNAME: ${{ github.repository_owner }}
+        run: python today.py
+
+      - name: Commit updated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg
+          git diff --quiet --cached || git commit -m "Update GitHub metrics card"
+          git push
