@@ -1,0 +1,38 @@
+<svg width="495" height="230" viewBox="0 0 495 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-bg { fill: #ffffff; stroke: #e1e4e8; stroke-width: 1; }
+    .title { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #0969da; }
+    .label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #24292f; }
+    .value { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #0969da; text-anchor: end; }
+    .footer { font: 400 10px 'Segoe UI', Ubuntu, Sans-Serif; fill: #6e7781; }
+  </style>
+
+  <rect x="0.5" y="0.5" width="494" height="229" rx="10" class="card-bg" />
+
+  <text x="25" y="35" class="title">$username's GitHub Stats</text>
+
+  <g transform="translate(25, 60)">
+    <text x="0" y="0" class="label">Total Stars</text>
+    <text x="445" y="0" class="value">$stars</text>
+
+    <text x="0" y="26" class="label">Total Commits</text>
+    <text x="445" y="26" class="value">$commits</text>
+
+    <text x="0" y="52" class="label">Total Pull Requests</text>
+    <text x="445" y="52" class="value">$prs</text>
+
+    <text x="0" y="78" class="label">Total Issues</text>
+    <text x="445" y="78" class="value">$issues</text>
+
+    <text x="0" y="104" class="label">Total Repositories</text>
+    <text x="445" y="104" class="value">$repos</text>
+
+    <text x="0" y="130" class="label">Followers</text>
+    <text x="445" y="130" class="value">$followers</text>
+
+    <text x="0" y="156" class="label">Lines of Code Changed</text>
+    <text x="445" y="156" class="value">+$loc_added, -$loc_deleted</text>
+  </g>
+
+  <text x="25" y="218" class="footer">Last generated: $generated_at</text>
+</svg>
