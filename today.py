@@ -162,7 +162,18 @@ def get_loc_stats(username, repos):
             print(f"WARNING: stats never became ready for {repo['name']}, skipping", file=sys.stderr)
             continue
 
-        for contributor in resp.json():
+        if not resp.text.strip():
+            # Some repos (very small or just-created) return an empty body
+            # instead of a proper 202/200 with data. Nothing to count.
+            continue
+
+        try:
+            stats = resp.json()
+        except ValueError:
+            print(f"WARNING: non-JSON stats response for {repo['name']}, skipping", file=sys.stderr)
+            continue
+
+        for contributor in stats:
             if contributor.get("author") and contributor["author"].get("login") == username:
                 for week in contributor.get("weeks", []):
                     total_additions += week.get("a", 0)
