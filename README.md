@@ -1,5 +1,3 @@
-![typing banner](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=600&lines=QA+Automation+Engineer+%40+M47+Labs;Testing+neural+voice+assistants+at+scale;Moving+toward+AI+Engineering;LLM+evaluation+%C2%B7+prompt+testing+%C2%B7+CI%2FCD)
-
 ```bash
 $ whoami
 Antonio Navarra — QA Automation Engineer, M47 Labs, Madrid
